@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django Drive</title>
+  </head>
+
+  <body>
+    <h3>
+        Welcome to Django Drive.
+    </h3>
+    <p>
+      Here are the current cars available for sale:
+    </p>
+
+    <div class="cars-container">
+      {% for car in cars %}
+        <div class="car">
+          <p>
+            <b> {{ car.name }} ({{ car.year_of_manufacture }}) </b> <br>
+            Price: {{ car.price }}
+          </p>
+          
+          <!-- if the car has an image attached -->
+          {% if car.image %}
+          <img src="{{ car.image }}" height="200" width="400"/>
+          {% endif %}
+
+          <!-- If the car has a video -->
+          {% if car.video %}
+            <video width="320" height="240" controls>
+                <source src="{{ car.video }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          {% endif %}
+
+        </div>
+
+        <hr>
+      {% endfor %}
+    </div>
+  
+  </body>
+</html>
