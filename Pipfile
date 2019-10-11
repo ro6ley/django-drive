@@ -7,7 +7,7 @@ name = "pypi"
 
 [packages]
 django = "*"
-django-storages = "*"
+"django-s3direct" = "*"
 
 [requires]
 python_version = "3.6"
