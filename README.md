@@ -5,7 +5,7 @@
 
 A demo Django project showcasing the use of Django Administration to upload files to Amazon S3.
 
-This repository contains the code for this [blogpost]() on [StackAbuse](https://stackabuse.com/).
+This repository contains the code for this [blogpost](https://stackabuse.com/uploading-files-to-aws-s3-with-python-and-django/) on [StackAbuse](https://stackabuse.com/).
 
 ## Getting Started
 
