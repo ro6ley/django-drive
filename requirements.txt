@@ -21,7 +21,7 @@ pipenv==2018.10.13
 pyasn1==0.4.7
 pylint==1.9.5
 python-dateutil==2.8.0
-PyYAML==5.1.2
+PyYAML==5.4
 rsa==4.1
 s3transfer==0.2.1
 singledispatch==3.4.0.3
